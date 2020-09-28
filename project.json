@@ -1,0 +1,108 @@
+{
+	"contentrating" : "Everyone",
+	"description" : "Um relógio minimalista feito em linguagens web (html, css e javascript). Customizável, simples e elegante.\r\n\r\n[b] Configurações [/b]\r\n• Todos os elementos mudam de cor\r\n• formato 12/24 horas\r\n• Alterar o formato da data\r\n• Ocultar Am/Pm\r\n• Ocultar data\r\n• Ocultar moldura\r\n\r\nBaixo uso de cpu, ram e armazenamento.",
+	"file" : "clock.html",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"datecolor" : 
+			{
+				"order" : 106,
+				"text" : "Date color",
+				"type" : "color",
+				"value" : "0.5019607843137255 0.5019607843137255 0.5019607843137255"
+			},
+			"dateformat" : 
+			{
+				"options" : 
+				[
+					{
+						"label" : "dd/mm/yyyy",
+						"value" : "1"
+					},
+					{
+						"label" : "mm/dd/yyyy",
+						"value" : "2"
+					},
+					{
+						"label" : "yyyy/mm/dd",
+						"value" : "3"
+					}
+				],
+				"order" : 102,
+				"text" : "Date Format",
+				"type" : "combo",
+				"value" : "1"
+			},
+			"framecolor" : 
+			{
+				"order" : 104,
+				"text" : "Frame color",
+				"type" : "color",
+				"value" : "0.5019607843137255 0.5019607843137255 0.5019607843137255"
+			},
+			"hourcolor" : 
+			{
+				"order" : 103,
+				"text" : "Hour color",
+				"type" : "color",
+				"value" : "0 1 0.41568627450980394"
+			},
+			"hourformat" : 
+			{
+				"options" : 
+				[
+					{
+						"label" : "24",
+						"value" : "24"
+					},
+					{
+						"label" : "12",
+						"value" : "12"
+					}
+				],
+				"order" : 100,
+				"text" : "Hour Format",
+				"type" : "combo",
+				"value" : "24"
+			},
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0 0 0"
+			},
+			"showampm" : 
+			{
+				"order" : 101,
+				"text" : "Show Am/Pm",
+				"type" : "bool",
+				"value" : true
+			},
+			"showdate" : 
+			{
+				"order" : 107,
+				"text" : "Show Date",
+				"type" : "bool",
+				"value" : true
+			},
+			"showframe" : 
+			{
+				"order" : 105,
+				"text" : "Show frame",
+				"type" : "bool",
+				"value" : true
+			}
+		}
+	},
+	"preview" : "preview.gif",
+	"tags" : [ "Abstract" ],
+	"title" : "Minimalist Clock",
+	"type" : "web",
+	"version" : 6,
+	"visibility" : "public",
+	"workshopid" : "2215133654",
+	"workshopurl" : "steam://url/CommunityFilePage/2215133654"
+}

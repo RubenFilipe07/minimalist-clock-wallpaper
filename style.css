@@ -1,0 +1,156 @@
+body{
+  background-color: black;
+  user-select: none;
+}
+
+#relogio{
+  border: 2px solid transparent;
+  border-radius: 10px;
+  width: 520px;
+  position: absolute;
+  left: 50%;
+  top: 47%;
+  transform: translate(-50%,-50%);
+}
+
+#hora{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 100px;
+  text-align: center;
+  color: rgb(0, 255, 106); 
+}
+
+#data{
+  font-size: 17px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 500;
+  position: relative;
+  left: 41.7%;
+  bottom: 30px;
+  color: rgb(134, 134, 134);
+}
+
+#am-pm{
+ font-size: 30px;
+ margin-left: 5px;
+}
+
+/*Full HD (1920x1080)*/
+@media only screen and (min-width: 1920px) {
+  #relogio{
+    width: 720px;
+    border: 3px solid transparent;
+    border-radius: 20px;
+  }
+  
+  #hora{
+     font-size: 140px;  
+  }
+
+  #data{
+    font-size: 26px;
+    bottom: 50px;
+  }
+
+  #am-pm{
+    font-size: 60px;
+    margin-left: 10px;
+   }
+
+}
+/*1440p (2560x1440)*/
+@media only screen and (min-width: 2560px) {
+  #relogio{
+    width: 960px;
+    border: 4px solid transparent;
+    border-radius: 20px;
+  }
+  
+  #hora{
+     font-size: 186px;  
+  }
+
+  #data{
+    font-size: 34px;
+    bottom: 66px;
+  }
+
+  #am-pm{
+    font-size: 80px;
+    margin-left: 10px;
+   }
+
+}
+
+
+/*4k (3840x2160)*/
+@media only screen and (min-width: 3840px) {
+  #relogio{
+    width: 1440px;
+    border: 5px solid transparent;
+    border-radius: 30px;
+  }
+  
+  #hora{
+     font-size: 280px;  
+  }
+
+  #data{
+    font-size: 52px;
+    bottom: 100px;
+  }
+
+  #am-pm{
+    font-size: 120px;
+    margin-left: 15px;
+   }
+
+}
+
+/*5k (5120x2880)*/
+@media only screen and (min-width: 5120px) {
+  #relogio{
+    width: 1920px;
+    border: 6px solid transparent;
+    border-radius: 40px;
+  }
+  
+  #hora{
+     font-size: 373px;  
+  }
+
+  #data{
+    font-size: 69px;
+    bottom: 133px;
+  }
+
+  #am-pm{
+    font-size: 160px;
+    margin-left: 20px;
+   }
+
+}
+
+/*8k (7680x4320)*/
+@media only screen and (min-width: 7680px) {
+  #relogio{
+    width: 2880px;
+    border: 10px solid transparent;
+    border-radius: 60px;
+  }
+  
+  #hora{
+     font-size: 560px;  
+  }
+
+  #data{
+    font-size: 104px;
+    bottom: 200px;
+  }
+
+  #am-pm{
+    font-size: 240px;
+    margin-left: 30px;
+   }
+
+}

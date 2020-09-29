@@ -1,12 +1,12 @@
 //Autor: Rúben Filipe https://github.com/rubenfilipe07
 var showAmPm;
 var showframe;
-var modo12Horas;
+var hourFormatIs12;
 var dateformat;
 var framecolor;
 var framecolorAsCss;
 
-function definir() {
+function initialSet() {
   window.wallpaperPropertyListener = {
     applyUserProperties: function (properties) {
 
@@ -15,57 +15,57 @@ function definir() {
         return Math.ceil(c * 255);
       });
       var schemeColorAsCSS = 'rgb(' + schemeColor + ')';
-      document.getElementById("fundo").style = "background-color: " + schemeColorAsCSS
+      document.getElementById("background").style = "background-color: " + schemeColorAsCSS
 
       var hourcolor = properties.hourcolor.value.split(' ');
       hourcolor = hourcolor.map(function (c) {
         return Math.ceil(c * 255);
       });
       var hourcolorAsCss = 'rgb(' + hourcolor + ')';
-      document.getElementById("hora").style.color = hourcolorAsCss
+      document.getElementById("hour").style.color = hourcolorAsCss
 
       framecolor = properties.framecolor.value.split(' ');
       framecolor = framecolor.map(function (c) {
         return Math.ceil(c * 255);
       });
       framecolorAsCss = 'rgb(' + framecolor + ')';
-      document.getElementById("relogio").style = "border: 2px solid " + framecolorAsCss
+      document.getElementById("clock").style = "border: 2px solid " + framecolorAsCss
 
       var datecolor = properties.datecolor.value.split(' ');
       datecolor = datecolor.map(function (c) {
         return Math.ceil(c * 255);
       });
       var datecolorAsCss = 'rgb(' + datecolor + ')';
-      document.getElementById("data").style.color = datecolorAsCss
+      document.getElementById("date").style.color = datecolorAsCss
 
       dateformat = properties.dateformat.value;
       var showdate = properties.showdate.value;
       if (showdate == false) {
-        document.getElementById("data").style.display = "none";
+        document.getElementById("date").style.display = "none";
       } else {
-        document.getElementById("data").style.display = "block";
+        document.getElementById("date").style.display = "block";
       }
 
       showframe = properties.showframe.value;
       if (showframe == false) {
-        document.getElementById("relogio").style = "border: 0px solid rgba(0,0,0,0.0)"
+        document.getElementById("clock").style = "border: 0px solid rgba(0,0,0,0.0)"
       } else {
-        document.getElementById("relogio").style = "border: 2px solid " + framecolorAsCss
+        document.getElementById("clock").style = "border: 2px solid " + framecolorAsCss
       }
 
       showAmPm = properties.showampm.value;
 
       var hourformat = properties.hourformat.value;
       if (hourformat == "12") {
-        modo12Horas = true;
+        hourFormatIs12 = true;
       } else {
-        modo12Horas = false;
+        hourFormatIs12 = false;
       }
     }
   }
 }
 
-function configurar() {
+function configure() {
   window.wallpaperPropertyListener = {
     applyUserProperties: function (properties) {
 
@@ -76,9 +76,9 @@ function configurar() {
       if (properties.hourformat) {
         var hourformat = properties.hourformat.value;
         if (hourformat == "12") {
-          modo12Horas = true;
+          hourFormatIs12 = true;
         } else {
-          modo12Horas = false;
+          hourFormatIs12 = false;
         }
       }
       if (properties.schemecolor) {
@@ -87,7 +87,7 @@ function configurar() {
           return Math.ceil(c * 255);
         });
         var schemeColorAsCSS = 'rgb(' + schemeColor + ')';
-        document.getElementById("fundo").style = "background-color: " + schemeColorAsCSS
+        document.getElementById("background").style = "background-color: " + schemeColorAsCSS
       }
 
       if (properties.hourcolor) {
@@ -96,7 +96,7 @@ function configurar() {
           return Math.ceil(c * 255);
         });
         var hourcolorAsCss = 'rgb(' + hourcolor + ')';
-        document.getElementById("hora").style.color = hourcolorAsCss
+        document.getElementById("hour").style.color = hourcolorAsCss
       }
          
       if (properties.framecolor) {
@@ -106,7 +106,7 @@ function configurar() {
         });
           framecolorAsCss = 'rgb(' + framecolor + ')';
           if(showframe===true){
-          document.getElementById("relogio").style = "border: 2px solid " + framecolorAsCss
+          document.getElementById("clock").style = "border: 2px solid " + framecolorAsCss
          }
       }
 
@@ -116,24 +116,24 @@ function configurar() {
           return Math.ceil(c * 255);
         });
         var datecolorAsCss = 'rgb(' + datecolor + ')';
-        document.getElementById("data").style.color = datecolorAsCss
+        document.getElementById("date").style.color = datecolorAsCss
       }
 
       if (properties.showdate) {
         var showdate = properties.showdate.value;
         if (showdate == false) {
-          document.getElementById("data").style.display = "none";
+          document.getElementById("date").style.display = "none";
         } else {
-          document.getElementById("data").style.display = "block";
+          document.getElementById("date").style.display = "block";
         }
       }
 
       if (properties.showframe) {
         showframe = properties.showframe.value;
         if (showframe == false) {
-          document.getElementById("relogio").style = "border: 0px solid rgba(0,0,0,0.0)"
+          document.getElementById("clock").style = "border: 0px solid rgba(0,0,0,0.0)"
         } else {
-          document.getElementById("relogio").style = "border: 2px solid " + framecolorAsCss
+          document.getElementById("clock").style = "border: 2px solid " + framecolorAsCss
         }
       }
 
@@ -145,71 +145,71 @@ function configurar() {
   };
 }
 
-function contar() {
+function count() {
   var d = new Date();
-  let horas = d.getHours();
-  let minutos = d.getMinutes();
-  let segundos = d.getSeconds();
+  let hours = d.getHours();
+  let minutes = d.getMinutes();
+  let seconds = d.getSeconds();
 
-  let dia = d.getDate();
-  let mes = d.getMonth() + 1;
-  let ano = d.getFullYear();
-  var horario;
+  let day = d.getDate();
+  let month = d.getMonth() + 1;
+  let year = d.getFullYear();
+  var period;
 
-  if (segundos >= 0 && segundos < 10) {
-    segundos = "0" + segundos
+  if (seconds >= 0 && seconds < 10) {
+    seconds = "0" + seconds
   }
-  if (minutos >= 0 && minutos < 10) {
-    minutos = "0" + minutos
+  if (minutes >= 0 && minutes < 10) {
+    minutes = "0" + minutes
   }
-  if (horas >= 0 && horas < 10) {
-    horas = "0" + horas
+  if (hours >= 0 && hours < 10) {
+    hours = "0" + hours
   }
 
-  if (horas >= 0 && horas < 12) {
-    horario = "Am"
+  if (hours >= 0 && hours < 12) {
+    period = "Am"
   } else {
-    horario = "Pm"
+    period = "Pm"
   }
   if (showAmPm == false) {
-    horario = "";
+    period = "";
   }
-  if (horas > 12 && modo12Horas == true) {
-    horas = horas - 12;
-  }
-
-  if (horas == 00 && modo12Horas == true) {
-    horas = 12;
+  if (hours > 12 && hourFormatIs12 == true) {
+    hours = hours - 12;
   }
 
-  if (mes < 10) {
-    mes = "0" + mes
-  }
-  if (dia < 10) {
-    dia = "0" + dia
+  if (hours == 00 && hourFormatIs12 == true) {
+    hours = 12;
   }
 
-  var saida = document.getElementById('hora')
-  saida.innerHTML = `${horas}:${minutos}:${segundos}<span id="am-pm">${horario}<\span>`
+  if (month < 10) {
+    month = "0" + month
+  }
+  if (day < 10) {
+    day = "0" + day
+  }
 
-  var saida2 = document.getElementById('data')
+  var saida = document.getElementById("hour")
+  saida.innerHTML = `${hours}:${minutes}:${seconds}<span id="am-pm">${period}<\span>`
+
+  var saida2 = document.getElementById('date')
   switch (dateformat) {
     case "1":
-      saida2.innerHTML = `${dia}/${mes}/${ano}`
+      saida2.innerHTML = `${day}/${month}/${year}`
       break;
     case "2":
-      saida2.innerHTML = `${mes}/${dia}/${ano}`
+      saida2.innerHTML = `${month}/${day}/${year}`
       break;
     case "3":
-      saida2.innerHTML = `${ano}/${mes}/${dia}`
+      saida2.innerHTML = `${year}/${month}/${day}`
       break;
     default:
-      saida2.innerHTML = `${dia}/${mes}/${ano}`
+      saida2.innerHTML = `${day}/${month}/${year}`
   }
-  configurar();
+  configure();
 }
 
-function iniciar() {
-  window.setInterval(contar, 1000);
-  definir();
+function initial() {
+  window.setInterval(count, 1000);
+  initialSet();
 }

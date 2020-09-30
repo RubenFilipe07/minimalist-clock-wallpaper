@@ -1,6 +1,6 @@
 {
 	"contentrating" : "Everyone",
-	"description" : "Um relógio minimalista feito em linguagens web (html, css e javascript). Customizável, simples e elegante.\r\n\r\n[b] Configurações [/b]\r\n• Todos os elementos mudam de cor\r\n• formato 12/24 horas\r\n• Alterar o formato da data\r\n• Ocultar Am/Pm\r\n• Ocultar data\r\n• Ocultar moldura\r\n\r\nBaixo uso de cpu, ram e armazenamento.",
+	"description" : "A minimalist clock made in web languages (html, css and javascript). Customizable, simple and elegant.\n\n[b]Settings[/b]\n\n[list]\n   [*]All elements change color\n   [*]12/24 hour format\n   [*]Change the date format\n   [*]Hide Am/Pm\n   [*]Hide date\n   [*]Hide frame\n[/list]\n\nLow cpu, ram and storage usage.",
 	"file" : "clock.html",
 	"general" : 
 	{
@@ -101,7 +101,7 @@
 	"tags" : [ "Abstract" ],
 	"title" : "Minimalist Clock",
 	"type" : "web",
-	"version" : 6,
+	"version" : 7,
 	"visibility" : "public",
 	"workshopid" : "2215133654",
 	"workshopurl" : "steam://url/CommunityFilePage/2215133654"

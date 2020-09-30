@@ -4,7 +4,7 @@ body{
 }
 
 #clock{
-  border: 2px solid transparent;
+  border: 2px solid rgb(128, 128, 128);
   border-radius: 10px;
   width: 520px;
   position: absolute;
@@ -35,11 +35,35 @@ body{
  margin-left: 5px;
 }
 
+/*HD+ (1600×900)*/
+@media only screen and (min-width: 1600px) {
+  #clock{
+    width: 600px;
+    border: 2.5px solid rgb(128, 128, 128);
+    border-radius: 16px;
+  }
+  
+  #hour{
+     font-size: 116px;  
+  }
+
+  #date{
+    font-size: 21px;
+    bottom: 41.67px;
+  }
+
+  #am-pm{
+    font-size: 50px;
+    margin-left: 8.33px;
+   }
+
+}
+
 /*Full HD (1920x1080)*/
 @media only screen and (min-width: 1920px) {
   #clock{
     width: 720px;
-    border: 3px solid transparent;
+    border: 3px solid rgb(128, 128, 128);
     border-radius: 20px;
   }
   
@@ -62,7 +86,7 @@ body{
 @media only screen and (min-width: 2560px) {
   #clock{
     width: 960px;
-    border: 4px solid transparent;
+    border: 4px solid rgb(128, 128, 128);
     border-radius: 20px;
   }
   
@@ -83,11 +107,11 @@ body{
 }
 
 
-/*4k (3840x2160)*/
+/*4K (3840x2160)*/
 @media only screen and (min-width: 3840px) {
   #clock{
     width: 1440px;
-    border: 5px solid transparent;
+    border: 5px solid rgb(128, 128, 128);
     border-radius: 30px;
   }
   
@@ -107,11 +131,11 @@ body{
 
 }
 
-/*5k (5120x2880)*/
+/*5K (5120x2880)*/
 @media only screen and (min-width: 5120px) {
   #clock{
     width: 1920px;
-    border: 6px solid transparent;
+    border: 6px solid rgb(128, 128, 128);
     border-radius: 40px;
   }
   
@@ -131,11 +155,11 @@ body{
 
 }
 
-/*8k (7680x4320)*/
-@media only screen and (min-width: 7680px) {
+/*8K (7680x4320)*/
+@media only screen and (min-width: 7680pxs) {
   #clock{
     width: 2880px;
-    border: 10px solid transparent;
+    border: 10px solid rgb(128, 128, 128);
     border-radius: 60px;
   }
   
@@ -151,6 +175,30 @@ body{
   #am-pm{
     font-size: 240px;
     margin-left: 30px;
+   }
+
+}
+
+/*16K (15360×8640)*/
+@media only screen and (min-width: 15360px) {
+  #clock{
+    width: 5760px;
+    border: 20px solid rgb(128, 128, 128);
+    border-radius: 120px;
+  }
+  
+  #hour{
+     font-size: 1120px;  
+  }
+
+  #date{
+    font-size: 208px;
+    bottom: 400px;
+  }
+
+  #am-pm{
+    font-size: 480px;
+    margin-left: 60px;
    }
 
 }

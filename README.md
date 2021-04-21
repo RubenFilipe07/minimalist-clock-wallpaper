@@ -23,9 +23,7 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=2215133654
 <h5>Source code</h5>
 https://github.com/RubenFilipe07/minimalist-clock-wallpaper 
 
-<h3>Style showcase</h3>
-![image](https://user-images.githubusercontent.com/53026536/115491956-45083980-a237-11eb-8c63-e30df0fe33f0.png)
-![image](https://user-images.githubusercontent.com/53026536/115491975-4c2f4780-a237-11eb-8d87-f3416ab684e1.png)
-![image](https://user-images.githubusercontent.com/53026536/115491988-50f3fb80-a237-11eb-870d-4d1face6ca65.png)
-
-
+<h3>Showcase</h3>
+<img src="https://user-images.githubusercontent.com/53026536/115491956-45083980-a237-11eb-8c63-e30df0fe33f0.png"  width="500">
+<img src="https://user-images.githubusercontent.com/53026536/115491975-4c2f4780-a237-11eb-8d87-f3416ab684e1.png"  width="500">
+<img src="https://user-images.githubusercontent.com/53026536/115491988-50f3fb80-a237-11eb-870d-4d1face6ca65.png"  width="500">

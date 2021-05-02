@@ -24,7 +24,7 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=2215133654
 https://github.com/RubenFilipe07/minimalist-clock-wallpaper 
 
 <h3>License</h3>
-<a href="https://github.com/RubenFilipe07/minimalist-clock-wallpaper/blob/master/LICENSE">MIT<a> &copy; Rúben Filipe
+<a href="https://github.com/RubenFilipe07/minimalist-clock-wallpaper/blob/master/LICENSE">MIT<a>
 
 <h3>Showcase</h3>
 <img src="https://user-images.githubusercontent.com/53026536/115491956-45083980-a237-11eb-8c63-e30df0fe33f0.png"  width="500">
